@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+build/
+dist/
+graphify-out/
+*.spec.bak
+# bundled solver binary (large, GPL - user supplies it)
+structvis/resources/bin/ccx*
+*.frd
+*.dat
+*.sta
+*.cvg
+*.structvis
