@@ -1,3 +1,4 @@
+<div align="center">
 # StructVis
 
 Parametric wingbox generator and FEA stress viewer for wings designed in
@@ -5,6 +6,13 @@ Parametric wingbox generator and FEA stress viewer for wings designed in
 the internal structure with sliders, and solve for stress, deflection and
 buckling with the open-source CalculiX solver no meshing, no boundary-condition
 setup.
+
+![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)
+![PySide6](https://img.shields.io/badge/UI-PySide6%20(Qt6)-41CD52?logo=qt&logoColor=white)
+![i18n](https://img.shields.io/badge/UI-English%20%2F%20Polski-2563EB)
+![License](https://img.shields.io/badge/License-MIT-green)
+
+</div>
 
 ## Features
 
@@ -34,6 +42,14 @@ setup.
 - **AI Review** (optional) - a local Ollama model writes a second-opinion
   structural review; appended to the PDF when used. Fully offline.
 - Light and dark themes (dark by default)
+
+---
+![s1](s1.png)
+![s2](s2.png)
+![s3](s3.png)
+![s4](s4.png)
+![s5](s5.png)
+---
 
 ## Requirements
 
