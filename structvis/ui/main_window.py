@@ -123,6 +123,8 @@ class MainWindow(QMainWindow):
         m.addAction(t("Save project as..."), self._save_project_as)
         m.addSeparator()
         m.addAction(t("Export PDF report..."), self._export_report)
+        m.addAction(t("Export to SimVis (simvis_mass.json)..."),
+                    self._export_simvis)
         m.addSeparator()
         m.addAction(t("Quit"), self.close)
 
@@ -194,6 +196,21 @@ class MainWindow(QMainWindow):
     def _export_report(self):
         self.tabs.setCurrentWidget(self.report_tab)
         self.report_tab._export()
+
+    def _export_simvis(self):
+        if self.state.project is None:
+            QMessageBox.information(
+                self, t("Export to SimVis"),
+                t("Import a .flovis project first."))
+            return
+        if self.state.mesh is None:
+            QMessageBox.information(
+                self, t("Export to SimVis"),
+                t("Build the wingbox first (Structure tab) so the wing "
+                  "structural mass can be measured."))
+            return
+        from .simvis_export_dialog import SimVisExportDialog
+        SimVisExportDialog(self.state, self).exec()
 
     def _solver_status(self):
         from ..core.fea import binaries

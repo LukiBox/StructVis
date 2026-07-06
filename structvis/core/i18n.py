@@ -242,5 +242,39 @@ _PL: dict[str, str] = {
     "Build tips": "Porady konstrukcyjne",
     "Model '{m}' was not found in Ollama.\nPull it with:\n\n    ollama pull {m}\n\nAlso make sure the server is running: 'ollama serve'.":
         "Nie znaleziono modelu '{m}' w Ollama.\nPobierz go:\n\n    ollama pull {m}\n\nUpewnij sie tez, ze dziala serwer: 'ollama serve'.",
+    # --- Export to SimVis (mass handoff) ---
+    "Export to SimVis (simvis_mass.json)...":
+        "Eksport do SimVis (simvis_mass.json)...",
+    "Export to SimVis": "Eksport do SimVis",
+    "Import a .flovis project first.": "Najpierw zaimportuj projekt .flovis.",
+    "Build the wingbox first (Structure tab) so the wing structural mass "
+    "can be measured.":
+        "Najpierw zbuduj skrzynke nosna (zakladka Struktura), aby zmierzyc "
+        "mase konstrukcji skrzydla.",
+    "Writes simvis_mass.json - mass, CG, inertia and the structural limit "
+    "load - for the flight simulator.":
+        "Zapisuje simvis_mass.json - mase, SC, bezwladnosc i limit "
+        "obciazenia - dla symulatora lotu.",
+    "Masses": "Masy",
+    "Wing structure (computed):": "Konstrukcja skrzydla (obliczona):",
+    "Target all-up mass:": "Docelowa masa startowa:",
+    "Item": "Element", "Mass [g]": "Masa [g]",
+    "Add item": "Dodaj element",
+    "Seed to target mass": "Uzupelnij do masy docelowej",
+    "x is measured aft from the nose (same origin as Flovis); items sit on "
+    "the centerline.":
+        "x liczone w tyl od nosa (ten sam poczatek co w Flovis); elementy "
+        "leza na osi symetrii.",
+    "Structural limits": "Limity strukturalne",
+    "Positive limit load": "Dodatni limit obciazenia",
+    "Negative limit load": "Ujemny limit obciazenia",
+    "Min. factor of safety": "Min. wspolczynnik bezpieczenstwa",
+    "(run the analysis for FoS)": "(uruchom analize, by poznac FoS)",
+    "Export simvis_mass.json": "Eksportuj simvis_mass.json",
+    "(items are {:+.0f} g off the target mass)":
+        "(elementy sa {:+.0f} g od masy docelowej)",
+    "Export error": "Blad eksportu",
+    "Exported to SimVis": "Wyeksportowano do SimVis",
+    "Note:": "Uwaga:",
 }
 _load()
